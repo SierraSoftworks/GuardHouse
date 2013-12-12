@@ -43,6 +43,11 @@ it('should correctly process wildcard permissions', function() {
 	GuardHouse.can(permissions, 'account.delete').should.be.true;
 });
 
+it('should correctly handle universal permissions', function() {
+	GuardHouse.can(true, 'some.random.permission').should.be.true;
+	GuardHouse.can(false, 'some.random.permission').should.be.false;
+});
+
 it('should correctly wrap functions', function(done) {
 	var permissions = {
 		f1: true,
