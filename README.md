@@ -58,5 +58,33 @@ guardhouse.options.default = false;
 guardhouse.options.targetProcessor = guardhouse.PathProcessor('.');
 ```
 
+GuardHouse comes with a customizable target processor which is capable of parsing standard paths with customizable delimiters. It is possible to create your own processor if you wish, provided it follows the convention layed out below.
+
+```javascript
+function CustomPathProcessor(path) {
+	return path.split(':'); // Must return an array of path segments
+}
+```
+
+## Use With Express.js
+It is often useful to provide access control for web services and APIs. GuardHouse can easily be integrated with Express using a middleware like the following.
+
+```javascript
+var GuardHouse = require('guardhouse');
+GuardHouse.options.targetProcessor = GuardHouse.PathProcessor('/');
+
+app.use(authenticationMiddleware);
+
+app.use(function(req, res, next) {
+	if(!req.user) 
+		return res.json(401, { error: 'You have not provided a valid set of credentials.' });
+
+	if(!Guardhouse.can(req.user.permissions, req.path))
+		return res.json(403, { error: 'You do not have permission to access this API feature.' });
+
+	next();
+});
+```
+
 ## Licence
 This module is made available under the MIT Licence. You can read the full licence in the LICENCE file.
