@@ -12,6 +12,12 @@ GuardHouse is designed to make the creation and processing of complex access con
 npm install guardhouse
 ```
 
+## Features
+ - **Simple To Use**
+   GuardHouse has been designed to be as simple and easy to use as possible, avoiding the complexities so often present in access control libraries by acting as nothing more than a structured framework.
+ - **Flexible Access Control Rules**
+   Access control rules are declared using a heirarchical structure which is easy to read and manage. Permissions can be inherited, allowing simple rules to cover a large variety of permission targets, while wildcard rules allow for added flexibility in dynamic contexts.
+
 ## Example
 
 ```javascript
@@ -20,13 +26,15 @@ var guest_acl = {
 		account: true,
 		users: {
 			read: true
-		}
+		},
+		'*': false
 	}
 };
 
 var admin_acl = {
 	api: true,
-	admin: true
+	admin: true,
+	'*': true
 };
 
 var guardhouse = require('guardhouse');
@@ -47,6 +55,8 @@ securedFunction.can(guest_acl);
 securedFunction.auth(admin_acl)(params);
 // -> someFunction(params)
 ```
+
+## Features
 
 ## Customization
 GuardHouse supports a number of customization options which influence its behaviour, including blacklist/whitelist modes, custom rule parsing logic and a number of other features.
