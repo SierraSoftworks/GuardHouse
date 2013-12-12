@@ -1,0 +1,1 @@
+(require.modules || {}).guardhouse = module.exports = require('./lib/GuardHouse.js');
