@@ -57,3 +57,6 @@ guardhouse.options.default = false;
 // Change to '/' for easy use with web paths
 guardhouse.options.targetProcessor = guardhouse.PathProcessor('.');
 ```
+
+## Licence
+This module is made available under the MIT Licence. You can read the full licence in the LICENCE file.

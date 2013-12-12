@@ -5,6 +5,8 @@
 	"description": "A flexible access control framework for Node.js",
 	"repository": "https://github.com/SierraSoftworks/GuardHouse",
 	"website": "https://sierrasoftworks.com/guardhouse",
+	"licence": "MIT",
+
 
 	"main": "./index",
 	"scripts": {
