@@ -1,6 +1,9 @@
 # GuardHouse
 **A flexible access control permissions framework**
 
+[![Build Status](https://travis-ci.org/SierraSoftworks/GuardHouse.png?branch=master)](https://travis-ci.org/SierraSoftworks/GuardHouse)
+[![](https://badge.fury.io/js/guardhouse.png)](https://npmjs.org/package/guardhouse)
+
 GuardHouse is designed to make the creation and processing of complex access control restrictions using an easy to understand and store JSON data format.
 
 ## Installation
