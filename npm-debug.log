@@ -1,0 +1,154 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.17
+3 info using node@v0.10.23
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /home/sierra/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+12 verbose folder .
+13 info prepublish guardhouse@1.1.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /home/sierra/.npm/1f1177db-tar.lock
+16 silly lockFile b8603eac-84081-0-6559410544577986-tmp-tgz tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+17 verbose lock tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz /home/sierra/.npm/b8603eac-84081-0-6559410544577986-tmp-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile b8603eac-84081-0-6559410544577986-tmp-tgz tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+21 silly lockFile b8603eac-84081-0-6559410544577986-tmp-tgz tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+22 verbose tar unpack /home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+23 silly lockFile 07201991-84081-0-6559410544577986-package tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package
+24 verbose lock tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package /home/sierra/.npm/07201991-84081-0-6559410544577986-package.lock
+25 silly lockFile b8603eac-84081-0-6559410544577986-tmp-tgz tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+26 verbose lock tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz /home/sierra/.npm/b8603eac-84081-0-6559410544577986-tmp-tgz.lock
+27 silly gunzTarPerm modes [ '755', '644' ]
+28 silly gunzTarPerm extractEntry package.json
+29 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+30 silly gunzTarPerm extractEntry .npmignore
+31 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+32 silly gunzTarPerm extractEntry README.md
+33 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+34 silly gunzTarPerm extractEntry LICENCE
+35 silly gunzTarPerm modified mode [ 'LICENCE', 436, 420 ]
+36 silly gunzTarPerm extractEntry index.js
+37 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+38 silly gunzTarPerm extractEntry .travis.yml
+39 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+40 silly gunzTarPerm extractEntry lib/FunctionWrapper.js
+41 silly gunzTarPerm modified mode [ 'lib/FunctionWrapper.js', 436, 420 ]
+42 silly gunzTarPerm extractEntry lib/GuardHouse.js
+43 silly gunzTarPerm modified mode [ 'lib/GuardHouse.js', 436, 420 ]
+44 silly gunzTarPerm extractEntry lib/PathProcessor.js
+45 silly gunzTarPerm modified mode [ 'lib/PathProcessor.js', 436, 420 ]
+46 silly gunzTarPerm extractEntry test/general.js
+47 silly gunzTarPerm modified mode [ 'test/general.js', 436, 420 ]
+48 silly gunzTarPerm extractEntry test/merge.js
+49 silly gunzTarPerm modified mode [ 'test/merge.js', 436, 420 ]
+50 silly lockFile 07201991-84081-0-6559410544577986-package tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package
+51 silly lockFile 07201991-84081-0-6559410544577986-package tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package
+52 silly lockFile b8603eac-84081-0-6559410544577986-tmp-tgz tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+53 silly lockFile b8603eac-84081-0-6559410544577986-tmp-tgz tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/tmp.tgz
+54 verbose tar pack [ '/home/sierra/.npm/guardhouse/1.1.0/package.tgz',
+54 verbose tar pack   '/home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package' ]
+55 verbose tarball /home/sierra/.npm/guardhouse/1.1.0/package.tgz
+56 verbose folder /home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package
+57 silly lockFile 07201991-84081-0-6559410544577986-package tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package
+58 verbose lock tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package /home/sierra/.npm/07201991-84081-0-6559410544577986-package.lock
+59 silly lockFile f45c0767-npm-guardhouse-1-1-0-package-tgz tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz
+60 verbose lock tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz /home/sierra/.npm/f45c0767-npm-guardhouse-1-1-0-package-tgz.lock
+61 silly lockFile 07201991-84081-0-6559410544577986-package tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package
+62 silly lockFile 07201991-84081-0-6559410544577986-package tar:///home/sierra/tmp/npm-4427-10yuEogo/1388149984081-0.6559410544577986/package
+63 silly lockFile f45c0767-npm-guardhouse-1-1-0-package-tgz tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz
+64 silly lockFile f45c0767-npm-guardhouse-1-1-0-package-tgz tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz
+65 silly lockFile 854800e7-rra-npm-guardhouse-1-1-0-package /home/sierra/.npm/guardhouse/1.1.0/package
+66 verbose lock /home/sierra/.npm/guardhouse/1.1.0/package /home/sierra/.npm/854800e7-rra-npm-guardhouse-1-1-0-package.lock
+67 silly lockFile 854800e7-rra-npm-guardhouse-1-1-0-package /home/sierra/.npm/guardhouse/1.1.0/package
+68 silly lockFile 854800e7-rra-npm-guardhouse-1-1-0-package /home/sierra/.npm/guardhouse/1.1.0/package
+69 verbose tar unpack /home/sierra/.npm/guardhouse/1.1.0/package.tgz
+70 silly lockFile 2da7416d-rra-npm-guardhouse-1-1-0-package tar:///home/sierra/.npm/guardhouse/1.1.0/package
+71 verbose lock tar:///home/sierra/.npm/guardhouse/1.1.0/package /home/sierra/.npm/2da7416d-rra-npm-guardhouse-1-1-0-package.lock
+72 silly lockFile f45c0767-npm-guardhouse-1-1-0-package-tgz tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz
+73 verbose lock tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz /home/sierra/.npm/f45c0767-npm-guardhouse-1-1-0-package-tgz.lock
+74 silly gunzTarPerm modes [ '755', '644' ]
+75 silly gunzTarPerm extractEntry package.json
+76 silly gunzTarPerm extractEntry .npmignore
+77 silly gunzTarPerm extractEntry README.md
+78 silly gunzTarPerm extractEntry LICENCE
+79 silly gunzTarPerm extractEntry index.js
+80 silly gunzTarPerm extractEntry .travis.yml
+81 silly gunzTarPerm extractEntry lib/FunctionWrapper.js
+82 silly gunzTarPerm extractEntry lib/GuardHouse.js
+83 silly gunzTarPerm extractEntry lib/PathProcessor.js
+84 silly gunzTarPerm extractEntry test/general.js
+85 silly gunzTarPerm extractEntry test/merge.js
+86 silly lockFile 2da7416d-rra-npm-guardhouse-1-1-0-package tar:///home/sierra/.npm/guardhouse/1.1.0/package
+87 silly lockFile 2da7416d-rra-npm-guardhouse-1-1-0-package tar:///home/sierra/.npm/guardhouse/1.1.0/package
+88 silly lockFile f45c0767-npm-guardhouse-1-1-0-package-tgz tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz
+89 silly lockFile f45c0767-npm-guardhouse-1-1-0-package-tgz tar:///home/sierra/.npm/guardhouse/1.1.0/package.tgz
+90 verbose chmod /home/sierra/.npm/guardhouse/1.1.0/package.tgz 644
+91 verbose chown /home/sierra/.npm/guardhouse/1.1.0/package.tgz [ 1000, 1000 ]
+92 silly lockFile 3a52ce78- .
+93 silly lockFile 3a52ce78- .
+94 silly publish { name: 'guardhouse',
+94 silly publish   author: { name: 'Benjamin Pannell', email: 'admin@sierrasoftworks.com' },
+94 silly publish   version: '1.1.0',
+94 silly publish   description: 'A flexible access control framework for Node.js',
+94 silly publish   repository:
+94 silly publish    { type: 'git',
+94 silly publish      url: 'https://github.com/SierraSoftworks/GuardHouse' },
+94 silly publish   website: 'https://sierrasoftworks.com/guardhouse',
+94 silly publish   licence: 'MIT',
+94 silly publish   main: './index',
+94 silly publish   scripts: { test: 'mocha' },
+94 silly publish   dependencies: { lodash: '*' },
+94 silly publish   devDependencies: { mocha: '*', should: '*' },
+94 silly publish   readme: '# GuardHouse\n**A flexible access control permissions framework**\n\n[![Build Status](https://travis-ci.org/SierraSoftworks/GuardHouse.png?branch=master)](https://travis-ci.org/SierraSoftworks/GuardHouse)\n[![](https://badge.fury.io/js/guardhouse.png)](https://npmjs.org/package/guardhouse)\n\nGuardHouse is designed to make the creation and processing of complex access control restrictions using an easy to understand and store JSON data format.\n\n## Installation\n\n```sh\nnpm install guardhouse\n```\n\n## Features\n - **Simple To Use**\n   GuardHouse has been designed to be as simple and easy to use as possible, avoiding the complexities so often present in access control libraries by acting as nothing more than a structured framework.\n - **Flexible Access Control Rules**\n   Access control rules are declared using a heirarchical structure which is easy to read and manage. Permissions can be inherited, allowing simple rules to cover a large variety of permission targets, while wildcard rules allow for added flexibility in dynamic contexts.\n\n## Example\n\n```javascript\nvar guest_acl = {\n\tapi: {\n\t\taccount: true,\n\t\tusers: {\n\t\t\tread: true\n\t\t},\n\t\t\'*\': false\n\t}\n};\n\nvar admin_acl = {\n\tapi: true,\n\tadmin: true,\n\t\'*\': true\n};\n\nvar guardhouse = require(\'guardhouse\');\nguardhouse.can(guest_acl, \'admin.user.delete\');\n// -> False\nguardhouse.can(admin_acl, \'admin.user.delete\');\n// -> True\n\n\n\nvar securedFunction = guardhouse.wrap(\'admin.functions\', someFunction);\nsecuredFunction.auth(guest_acl)();\n// -> throws an error\n\nsecuredFunction.can(guest_acl);\n// -> False\n\nsecuredFunction.auth(admin_acl)(params);\n// -> someFunction(params)\n```\n\n## Features\n\n## Customization\nGuardHouse supports a number of customization options which influence its behaviour, including blacklist/whitelist modes, custom rule parsing logic and a number of other features.\n\n```javascript\nvar guardhouse = require(\'guardhouse\');\n\n// Set to true for blacklist mode\nguardhouse.options.default = false;\n\n// Change to \'/\' for easy use with web paths\nguardhouse.options.targetProcessor = guardhouse.PathProcessor(\'.\');\n```\n\nGuardHouse comes with a customizable target processor which is capable of parsing standard paths with customizable delimiters. It is possible to create your own processor if you wish, provided it follows the convention layed out below.\n\n```javascript\nfunction CustomPathProcessor(path) {\n\treturn path.split(\':\'); // Must return an array of path segments\n}\n```\n\n## Use With Express.js\nIt is often useful to provide access control for web services and APIs. GuardHouse can easily be integrated with Express using a middleware like the following.\n\n```javascript\nvar GuardHouse = require(\'guardhouse\');\nGuardHouse.options.targetProcessor = GuardHouse.PathProcessor(\'/\');\n\napp.use(authenticationMiddleware);\n\napp.use(function(req, res, next) {\n\tif(!req.user) \n\t\treturn res.json(401, { error: \'You have not provided a valid set of credentials.\' });\n\n\tif(!Guardhouse.can(req.user.permissions, req.path))\n\t\treturn res.json(403, { error: \'You do not have permission to access this API feature.\' });\n\n\tnext();\n});\n```\n\n## Licence\nThis module is made available under the MIT Licence. You can read the full licence in the LICENCE file.',
+94 silly publish   readmeFilename: 'README.md',
+94 silly publish   bugs: { url: 'https://github.com/SierraSoftworks/GuardHouse/issues' },
+94 silly publish   homepage: 'https://github.com/SierraSoftworks/GuardHouse',
+94 silly publish   _id: 'guardhouse@1.1.0',
+94 silly publish   dist: { shasum: '374194cfd1dba24125c4a3b6a41c7443ec658d32' },
+94 silly publish   _from: '.' }
+95 verbose url raw guardhouse
+96 verbose url resolving [ 'https://registry.npmjs.org/', './guardhouse' ]
+97 verbose url resolved https://registry.npmjs.org/guardhouse
+98 info trying registry request attempt 1 at 15:13:04
+99 http PUT https://registry.npmjs.org/guardhouse
+100 http 409 https://registry.npmjs.org/guardhouse
+101 verbose url raw guardhouse
+102 verbose url resolving [ 'https://registry.npmjs.org/', './guardhouse' ]
+103 verbose url resolved https://registry.npmjs.org/guardhouse
+104 info trying registry request attempt 1 at 15:13:06
+105 http GET https://registry.npmjs.org/guardhouse
+106 http 200 https://registry.npmjs.org/guardhouse
+107 error publish fail Cannot publish over existing version.
+107 error publish fail Update the 'version' field in package.json and try again.
+107 error publish fail
+107 error publish fail If the previous version was published in error, see:
+107 error publish fail     npm help unpublish
+107 error publish fail
+107 error publish fail To automatically increment version numbers, see:
+107 error publish fail     npm help version
+108 error System Linux 3.2.0-57-generic-pae
+109 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+110 error cwd /media/Data/Code/GuardHouse
+111 error node -v v0.10.23
+112 error npm -v 1.3.17
+113 error code EPUBLISHCONFLICT
+114 verbose exit [ 1, true ]
