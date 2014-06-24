@@ -1,24 +1,20 @@
 {
-	"name": "guardhouse",
-	"author": "Benjamin Pannell <admin@sierrasoftworks.com>",
-	"version": "1.2.1",
-	"description": "A flexible access control framework for Node.js",
-	"repository": "https://github.com/SierraSoftworks/GuardHouse",
-	"website": "https://sierrasoftworks.com/guardhouse",
-	"licence": "MIT",
-
-
-	"main": "./index",
-	"scripts": {
-		"test": "mocha"
-	},
-
-	"dependencies": {
-		"lodash": "*"
-	},
-
-	"devDependencies": {
-		"mocha": "*",
-		"should": "*"
-	}
+  "name": "guardhouse",
+  "author": "Benjamin Pannell <admin@sierrasoftworks.com>",
+  "version": "1.3.0",
+  "description": "A flexible access control framework for Node.js",
+  "repository": "https://github.com/SierraSoftworks/GuardHouse",
+  "website": "https://sierrasoftworks.com/guardhouse",
+  "licence": "MIT",
+  "main": "./index",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "lodash": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  }
 }
