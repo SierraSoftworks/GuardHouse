@@ -57,6 +57,22 @@ securedFunction.auth(admin_acl)(params);
 ```
 
 ## Features
+GuardHouse includes a powerful permission merging engine which allows partial permissions to be granted to a user, or revoked, in a non-destructive manner. This simplifies common permission management tasks considerably.
+
+```javascript
+var guardhouse = require('guardhouse');
+guardhouse.grant(user_acl, {
+	a: {
+		b: true
+	}
+});
+
+guardhouse.revoke(user_acl, {
+	a: {
+		c: false
+	}
+});
+```
 
 ## Customization
 GuardHouse supports a number of customization options which influence its behaviour, including blacklist/whitelist modes, custom rule parsing logic and a number of other features.
