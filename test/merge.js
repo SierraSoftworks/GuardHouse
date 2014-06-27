@@ -99,7 +99,7 @@ describe('permission merging', function() {
 			a: true
 		};
 
-		GuardHouse.grant(original, change).should.eql(expected);
+		GuardHouse.revoke(original, change).should.eql(expected);
 	});
 
 	it('should correctly revoke nested permissions', function() {
@@ -116,7 +116,7 @@ describe('permission merging', function() {
 			a: true
 		};
 
-		GuardHouse.grant(original, change).should.eql(expected);
+		GuardHouse.revoke(original, change).should.eql(expected);
 	});
 
 	it('should correctly revoke deep permissions', function() {
@@ -132,6 +132,6 @@ describe('permission merging', function() {
 			a: { b: true }
 		};
 
-		GuardHouse.grant(original, change).should.eql(expected);
+		GuardHouse.revoke(original, change).should.eql(expected);
 	});
 });
