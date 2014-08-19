@@ -1,7 +1,7 @@
 {
   "name": "guardhouse",
   "author": "Benjamin Pannell <admin@sierrasoftworks.com>",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A flexible access control framework for Node.js",
   "repository": "https://github.com/SierraSoftworks/GuardHouse",
   "website": "https://sierrasoftworks.com/guardhouse",
