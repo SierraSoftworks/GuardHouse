@@ -22,6 +22,11 @@ it('should correctly process nested permissions', function() {
 		account: true
 	};
 
+	GuardHouse.get(permissions, 'invalid').should.be.false;
+	GuardHouse.get(permissions, 'account').should.be.true;
+	GuardHouse.get(permissions, 'api').should.eql({ admin: false, user: true });
+	GuardHouse.get(permissions, 'account.delete').should.be.true;
+
 	GuardHouse.can(permissions, 'api.admin').should.be.false;
 	GuardHouse.can(permissions, 'api.admin.user.delete').should.be.false;
 	GuardHouse.can(permissions, 'api.user').should.be.true;
