@@ -40,6 +40,21 @@ describe('permission merging', function() {
 			a: true
 		};
 
+		var change = 'b';
+
+		var expected = {
+			a: true,
+			b: true
+		};
+
+		GuardHouse.grant(original, change).should.eql(expected);
+	});
+
+	it('should correctly grant basic path permissions', function() {
+		var original = {
+			a: true
+		};
+
 		var change = {
 			b: true
 		};
@@ -69,6 +84,21 @@ describe('permission merging', function() {
 		GuardHouse.grant(original, change).should.eql(expected);
 	});
 
+	it('should correctly grant nested path permissions', function() {
+		var original = {
+			a: true
+		};
+
+		var change = 'b.c';
+
+		var expected = {
+			a: true,
+			b: { c: true }
+		};
+
+		GuardHouse.grant(original, change).should.eql(expected);
+	});
+
 	it('should correctly grant deep permissions', function() {
 		var original = {
 			a: { b: true }
@@ -77,6 +107,20 @@ describe('permission merging', function() {
 		var change = {
 			a: { c: true }
 		};
+
+		var expected = {
+			a: { b: true, c: true }
+		};
+
+		GuardHouse.grant(original, change).should.eql(expected);
+	});
+
+	it('should correctly grant deep path permissions', function() {
+		var original = {
+			a: { b: true }
+		};
+
+		var change = 'a.c';
 
 		var expected = {
 			a: { b: true, c: true }
@@ -102,6 +146,21 @@ describe('permission merging', function() {
 		GuardHouse.revoke(original, change).should.eql(expected);
 	});
 
+	it('should correctly revoke basic path permissions', function() {
+		var original = {
+			a: true,
+			b: true
+		};
+
+		var change = 'b';
+
+		var expected = {
+			a: true
+		};
+
+		GuardHouse.revoke(original, change).should.eql(expected);
+	});
+
 	it('should correctly revoke nested permissions', function() {
 		var original = {
 			a: true,
@@ -119,6 +178,21 @@ describe('permission merging', function() {
 		GuardHouse.revoke(original, change).should.eql(expected);
 	});
 
+	it('should correctly revoke nested path permissions', function() {
+		var original = {
+			a: true,
+			b: { c: true }
+		};
+
+		var change = 'b.c';
+
+		var expected = {
+			a: true
+		};
+
+		GuardHouse.revoke(original, change).should.eql(expected);
+	});
+
 	it('should correctly revoke deep permissions', function() {
 		var original = {
 			a: { b: true, c: true }
@@ -127,6 +201,20 @@ describe('permission merging', function() {
 		var change = {
 			a: { c: false }
 		};
+
+		var expected = {
+			a: { b: true }
+		};
+
+		GuardHouse.revoke(original, change).should.eql(expected);
+	});
+
+	it('should correctly revoke deep path permissions', function() {
+		var original = {
+			a: { b: true, c: true }
+		};
+
+		var change = 'a.c';
 
 		var expected = {
 			a: { b: true }
