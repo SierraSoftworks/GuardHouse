@@ -15,7 +15,7 @@
 
 	gh.options.targetProcessor = gh.PathProcessor('/');
 
-	gh.can = function(p,t) {
+	gh.get = function(p,t) {
 		var s = gh.options.targetProcessor(t);
 		if(p === undefined || p === null) return gh.options.default;
 		for(var i = 0; i < s.length; i++) {
@@ -26,6 +26,13 @@
 			}
 			p = p[s[i]];
 		}
+		
+		return p;
+	};
+
+	gh.can = function(p,t) {
+		p = gh.get(p,t);
+		
 		if(typeof p == 'boolean') return p;
 		return gh.options.default;
 	};
